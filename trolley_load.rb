@@ -12,5 +12,5 @@ CONFIG = YAML.load_file('conf/config.yml')
 DB_Name=ARGV[0]
 Table_Name=ARGV[1]
 Copy_SQL=ARGV[2]
-psql_copy_cmd="psql -U #{CONFIG['psql_user']} -h #{CONFIG['psql_host']} -d #{DB_Name} -c \"copy (#{Copy_SQL}) TO '#{CONFIG['data_dir']+DB_Name+Table_Name+Time.now.to_i.to_s}.sql'"
-system(psql_copy_cmd)
+psql_copy_to_cmd="psql -U #{CONFIG['psql_user']} -h #{CONFIG['psql_host']} -d #{DB_Name} -c \"copy (#{Copy_SQL}) TO '#{CONFIG['data_dir']+DB_Name+Table_Name+Time.now.to_i.to_s}.sql'"
+system(psql_copy_to_cmd)
