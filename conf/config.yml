@@ -3,3 +3,4 @@ psql_host: localhost
 psql_db: rep_test
 
 data_dir: C:/public/projects/PG_Schedule_Dump/db/testcenter/data/
+dbconnect: postgres://postgres:root@localhost:5432/rep_test

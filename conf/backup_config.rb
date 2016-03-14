@@ -10,12 +10,14 @@ backup_list=[
                     {
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     }
                 ]
             },
@@ -25,12 +27,14 @@ backup_list=[
                     {
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     }
                 ]
             }
@@ -46,12 +50,14 @@ backup_list=[
                     {
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     }
                 ]
             },
@@ -61,12 +67,14 @@ backup_list=[
                     {
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
-                        :offset_column_type=>'type_01'
+                        :offset_column_type=>'type_01',
+                        :offset_init_value=>'value'
                     }
                 ]
             }
