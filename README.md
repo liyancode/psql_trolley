@@ -11,6 +11,8 @@ This action is scheduled token daily. psql_trolley is the man who will do this s
 ## How.
 
 ### 1. create a table for offset
+<pre><code>
+
 -- table for backup offset
        create TABLE backup_offset(
          id serial Primary key NOT NULL,
@@ -23,4 +25,5 @@ This action is scheduled token daily. psql_trolley is the man who will do this s
        	inserted_at TIMESTAMP ,
        	last_updated_at TIMESTAMP
        );
+</code></pre>
 
