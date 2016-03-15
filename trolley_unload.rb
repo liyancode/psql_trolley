@@ -1,3 +1,6 @@
+# trolley unload
+# unload what? we have a .sql file on 'trolley'(disk), then 'unload'(copy and insert it into) to db.
+
 require 'yaml'
 
 # backup data to local disk

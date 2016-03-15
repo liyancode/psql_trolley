@@ -1,3 +1,6 @@
+# trolley load
+# load what? backup db data to a .sql file, then 'load'(save) it to 'trolley'(disk).
+
 require 'yaml'
 
 # backup data to local disk
