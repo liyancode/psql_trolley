@@ -1,5 +1,5 @@
 # config what to backup
-backup_list=[
+BACKUP_LIST=[
     {
         :db_host=>'localhost',
         :db_host_psql_username=>'username',
@@ -11,12 +11,14 @@ backup_list=[
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     }
                 ]
@@ -28,12 +30,14 @@ backup_list=[
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     }
                 ]
@@ -51,12 +55,14 @@ backup_list=[
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     }
                 ]
@@ -68,12 +74,14 @@ backup_list=[
                         :table_name=>'table_01',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     },
                     {
                         :table_name=>'table_02',
                         :offset_column_name=>'col_01',
                         :offset_column_type=>'type_01',
+                        :lessthan_or_greaterthan=>'>',
                         :offset_init_value=>'value'
                     }
                 ]
@@ -81,17 +89,18 @@ backup_list=[
         ]
     }
 ]
-# test p
-backup_list.each{|host|
-  p host[:db_host]
-  p host[:db_host_psql_username]
-  db_list=host[:db_list]
-  db_list.each{|db|
-    p "  "+db[:db_name]
-    table_list=db[:table_list]
-    table_list.each{|table|
-      p "    "+table[:table_name]
-      p "    "+table[:offset_column_name]
-    }
-  }
-}
+# # test p
+# BACKUP_LIST.each{|host|
+#   p host[:db_host]
+#   p host[:db_host_psql_username]
+#   db_list=host[:db_list]
+#   db_list.each{|db|
+#     p "  "+db[:db_name]
+#     table_list=db[:table_list]
+#     table_list.each{|table|
+#       p "    "+table[:table_name]
+#       p "    "+table[:offset_column_name]
+#       p "    "+table[:offset_init_value]
+#     }
+#   }
+# }
